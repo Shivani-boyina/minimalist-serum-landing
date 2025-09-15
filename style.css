@@ -163,10 +163,15 @@ nav ul li a:hover {
 }
 
 .showcase-gallery img {
-  border-radius: 10px;       /* Rounded corners (optional, for a pro look) */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);  /* Subtle shadow */
-  transition: transform 0.3s ease;        /* Smooth hover effect */
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
 }
+
 
 .showcase-gallery img:hover {
   transform: scale(1.05);    /* Slight zoom on hover */
@@ -181,4 +186,17 @@ footer {
   font-size: 0.9rem;
   color: #fff;
 }
+@media (max-width: 768px) {
+  .showcase-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .showcase-gallery img {
+    max-width: 90%;
+  }
+}
+
+
+
 
