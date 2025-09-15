@@ -155,34 +155,23 @@ nav ul li a:hover {
 }
 
 /* Showcase */
-.showcase {
-  padding: 100px 80px;
-  background: #f8f9fa;
-  text-align: center;
-}
-
-.showcase h2 {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-  color: #e75480;
-}
-
 .showcase-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
+  display: flex;             /* Put images in a row */
+  justify-content: center;   /* Center them horizontally */
+  gap: 20px;                 /* Space between images */
+  margin-top: 20px;          /* Space above the images */
 }
 
 .showcase-gallery img {
-  width: 350px;
-  border-radius: 20px;
-  transition: transform 0.3s ease;
+  border-radius: 10px;       /* Rounded corners (optional, for a pro look) */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);  /* Subtle shadow */
+  transition: transform 0.3s ease;        /* Smooth hover effect */
 }
 
 .showcase-gallery img:hover {
-  transform: scale(1.05);
+  transform: scale(1.05);    /* Slight zoom on hover */
 }
+
 
 /* Footer */
 footer {
@@ -192,3 +181,4 @@ footer {
   font-size: 0.9rem;
   color: #fff;
 }
+
