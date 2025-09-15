@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lumina Serum | Minimalist Skincare</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <h1 class="logo">Lumina</h1>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#features">Benefits</a></li>
+        <li><a href="#showcase">Showcase</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section with Video Background -->
+  <section class="hero" id="hero">
+    <video autoplay muted loop>
+      <source src="background.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-content">
+      <h2>Glow Naturally with Lumina Serum</h2>
+      <p>A minimalist skincare solution crafted with pure botanicals for radiant, healthy skin.</p>
+      <a href="#showcase" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <h2>Why Lumina Serum?</h2>
+    <div class="feature-grid">
+      <div class="card">
+        <h3>🌸 Gentle on All Skin Types</h3>
+        <p>Suitable for sensitive, dry, oily, and combination skin.</p>
+      </div>
+      <div class="card">
+        <h3>💎 Dermatologist Tested</h3>
+        <p>Proven safe and effective for daily skincare routine.</p>
+      </div>
+      <div class="card">
+        <h3>🌊 Deep Hydration</h3>
+        <p>Provides long-lasting moisture and healthy glow.</p>
+      </div>
+      <div class="card">
+        <h3>🍃 Eco-friendly Packaging</h3>
+        <p>Minimalist design with sustainable materials.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Showcase -->
+  <section class="showcase" id="showcase">
+    <h2>See the Difference</h2>
+    <div class="showcase-gallery">
+      <img src="serum-left.png" alt="Serum Bottle">
+      <img src="serum-right.png" alt="Minimalist Skincare">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <p>© 2025 Lumina Skincare. All Rights Reserved.</p>
+    <p>Follow us: 🌐 Instagram | Twitter | Facebook</p>
+  </footer>
+
+  <!-- Smooth Scroll Script -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth"
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
